@@ -86,16 +86,16 @@ str_cli(FILE *fp, int sockfd)
 	if (sizeof(short) == 2) {
 		if (un.c[0] == 1 && un.c[1] == 2)
 		{	
-			printf("big-endian\n");
+			//printf("big-endian\n");
 		}
 		else if (un.c[0] == 2 && un.c[1] == 1)
 		{
-			printf("little-endian\n");
+		//	printf("little-endian\n");
 		}
 		else
 			printf("unknown\n");
 	} 
-	byor[0]=un.c[0]+'0'-1;
+	byor[0]=un.c[0]+'0';
 	byor[1]='\n';
 	byor[2]='\0';
 //	Writen(sockfd,byteorder,strlen(byteorder));
