@@ -7,7 +7,7 @@ void timer_ten()
 	char info[40];
 	for(;;)
 	{
-		usleep(500000);
+		usleep(10000);
 /*		FILE *fp;
 		if((fp=fopen("1.txt","r+"))==NULL)
 		{
